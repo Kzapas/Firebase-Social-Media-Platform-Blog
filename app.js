@@ -1,13 +1,6 @@
 // Firebase Config
 var firebaseConfig = {
-	apiKey: "AIzaSyAZFpYDBcP28keM7mKcLXhSpXdRSzX1IwU",
-    authDomain: "canvas-application-b1151.firebaseapp.com",
-    databaseURL: "https://canvas-application-b1151.firebaseio.com",
-    projectId: "canvas-application-b1151",
-    storageBucket: "canvas-application-b1151.appspot.com",
-    messagingSenderId: "894695075970",
-    appId: "1:894695075970:web:a457db1ab0eb742dc5049b",
-    measurementId: "G-82PKWZHWSR"
+	//Firebase config
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
