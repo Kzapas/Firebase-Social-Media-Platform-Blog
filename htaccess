@@ -1,8 +1,8 @@
-ErrorDocument 400 http://kollagespace.com/error
-ErrorDocument 401 http://kollagespace.com/error
-ErrorDocument 403 http://kollagespace.com/error
-ErrorDocument 404 http://kollagespace.com/error
-ErrorDocument 503 http://kollagespace.com/error
+ErrorDocument 400 http://yourdomain.com/error
+ErrorDocument 401 http://yourdomain.com/error
+ErrorDocument 403 http://yourdomain.com/error
+ErrorDocument 404 http://yourdomain.com/error
+ErrorDocument 503 http://yourdomain.com/error
 DirectoryIndex home.html
 RewriteEngine On
 RewriteCond %{HTTP:X-Forwarded-Proto} =http
