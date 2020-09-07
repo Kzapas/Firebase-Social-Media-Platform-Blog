@@ -13,7 +13,7 @@ This is a Firebase Social Media Platform fully responsive for Blogs, etc. The pr
 
 # Setup:
 1. Go to the app.js file and open it with text editor
-2. At the top, go to where it says "//Place Firebase Config here"
+2. At the top, go to where it says "//Firebase config"
 3. Insert your API key provided to you when you create a Firebase project.
 4. Adjust all of the text and images and you're done!
 
