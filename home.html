@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./app.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="bootstrap.min.css"
+    />
+    <title>Kollage Space | Art, Tutorials, and more!</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<img href="home" id="logo_icon_nav" src="img/logo.png" onclick="window.location.href='home';" style="width:30px;, height:30px;"/><p id="spacer">..</p>
+	  <a class="navbar-brand" href="home" id="title_name" >Kollage Space</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home">Home</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="create">Upload</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" id="loginsbtn" href="create">Login</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" id="loginsbtnout" onclick="logout()">Logout</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" id="signupbtn" href="register">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+	  <!-- account -->
+      <button id="logoutBtn" style="display:none;" onclick="logout()">Logout</button>
+    </nav>
+	
+    <main role="main">
+	<div id="welcome-text" >You're logged-in! &#128512;</div>
+      <!-- JUMBOTRON -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3 pt-4" style="color:white; font-weight:390;"><!--<img id="logo_h1" src="img/logo.png" style="width:9%; height:9%; vertical-align: top;"/>--> Explore the World of Art!</h1>
+          <p style="color:white;">
+		  <br>
+            <strong>Welcome to Kollage Space!</strong> Here you can explore the various pieces of art the community has uploaded!
+			<br></br>
+          </p>
+          <p>
+            <a class="btn btn-primary btn-lg" href="about" role="button"
+              >Learn more &raquo;</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row" id="posts-collection"></div>
+
+        <hr />
+      </div>
+      <!-- /container -->
+    </main>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-database.js"></script>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>

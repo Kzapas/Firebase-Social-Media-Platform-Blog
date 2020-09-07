@@ -1,0 +1,373 @@
+body {
+  padding-top: 3.5rem;
+}
+
+.navbar-brand img {
+	display: block;
+}
+
+#spacer {
+	opacity:0;
+}
+
+#patreon{
+	margin-top: 3px;
+}
+
+#patreon:hover{
+	cursor: pointer;
+}
+
+#info{
+  position:absolute;
+  color:#069;
+  display:none;
+  font-size:12px;
+  left: 100px;
+  margin-top: 10px;
+}
+
+#info2{
+  position:absolute;
+  color:#069;
+  display:none;
+  font-size:12px;
+  left: 120px;
+  margin-top: 10px;
+}
+
+#info3{
+  color:#069;
+  display:none !important;
+  font-size:12px;
+  text-align: center;
+}
+
+#info4{
+  color:#069;
+  display:none !important;
+  font-size:12px;
+  text-align: center;
+}
+
+#info8{
+  position:absolute;
+  color:#069;
+  margin:auto;
+  display:none;
+  font-size:15px;
+  text-align:center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+#registerlink{
+  position:absolute;
+  color:#069;
+  font-size:15px;
+  right: 20px;
+  margin-top: 15px;
+}
+
+#registerlink2{
+  position:absolute;
+  color:#069;
+  font-size:15px;
+  right: 20px;
+  margin-top: -15px;
+  display:none;
+}
+
+#registerlink3{
+  position:absolute;
+  color:#069;
+  font-size:15px;
+  right: 20px;
+  margin-top: 15px;
+}
+
+.jumbotron{
+	background-image: url(img/banner.gif);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position: center;
+}
+#logo_icon_nav:hover{
+	cursor:pointer;
+}
+
+#bikeimg{
+	width: 15%;
+	height: 15%;
+}
+
+#about_main{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logoutBtn{
+	border-radius: 5px;
+	background-color: white;
+	color: black;
+	border:none;
+	text-align: center;
+	padding: 8px;
+}
+
+#logoutBtn:hover{
+	background-color: #ededed;
+}
+
+#signupbtn:hover{
+	background-color: rgba(209, 209, 209, 0.2);
+}
+
+#signupbtn{
+	border-color: white;
+	border-style: solid;
+	border-radius: 5px;
+	margin-left: 20px;
+	border-width: 1px;
+	font-size: 14px;
+	color: white;
+}
+
+#loginsbtn:hover{
+	background-color: #ededed;
+	border-color: #ededed;
+}
+
+#loginsbtn{
+	border-color: white;
+	border-style: solid;
+	border-radius: 5px;
+	margin-left: 20px;
+	border-width: 1px;
+	font-size: 14px;
+	color:black;
+	background-color: white;
+}
+
+#loginsbtnout{
+	border-color: white;
+	border-style: solid;
+	border-radius: 5px;
+	margin-left: 20px;
+	border-width: 1px;
+	font-size: 14px;
+	color:black;
+	background-color: white;
+	display: none;
+}
+
+#welcome-text {
+	border-radius: 20px; /* Making border radius */
+	height:auto;
+	width:10%;
+    padding: 6px 10px 6px 10px; /* Making space around letters */
+    font-size: 13px; /* Changing font size */
+	background-color: white;
+	display:none;
+	text-align: center;
+	color:#2D8CF0;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	position: absolute;
+	animation-name: notification;
+	animation-duration: 4s;
+	top: -40px;
+	box-shadow: 0 3px 20px #ddd;
+	-webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+	-moz-animation-fill-mode: forwards;    /* FF 5+ */    /* IE 10+ */
+	animation-fill-mode: forwards;     
+}
+
+@keyframes notification {
+  0%   { top:-40px; opacity:0; display:none;}
+  25%  { top:90px; opacity:1; display:block;}
+  50%  { top:90px; opacity:1; display:block;}
+  75%  { top:90px; opacity:1; display:block;}
+  100% { top:-40px; opacity:0; display:none;}
+}
+
+@keyframes post {
+	0% {
+        transform: scale(.1,.1);
+    }
+    50% {
+        transform: scale(1.05,1.05);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+@keyframes content2 {
+	0% {
+        opacity: 0;
+    }
+    25% {
+        opacity:0;
+    }
+	50% {
+        opacity:0;
+    }
+	75% {
+        opacity:0.5;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+.posted-image{
+	width:70%;	
+	height:auto; 
+	border-radius: 5%; 
+	animation-name:post; 
+	animation-duration: 1s; 
+	-webkit-animation-fill-mode: forwards; 
+	-moz-animation-fill-mode: forwards; 
+	animation-fill-mode: forwards;
+}
+
+#posted-content-main{
+	animation-name:content2; 
+	animation-duration: 2s; 
+	-webkit-animation-fill-mode: forwards; 
+	-moz-animation-fill-mode: forwards; 
+	animation-fill-mode: forwards;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+	#spacer{
+		display:none;
+	}
+	
+	#logo_h1{
+		display:none;
+	}
+	
+	#logo_icon_nav{
+		display:block;
+	}
+	
+	#title_name{
+		display:none;
+	}
+	
+	#logoutBtn{
+		padding: 5px;
+		display: none;
+	}
+	
+	#signupbtn{
+	border-color: none;
+	border-style: none;
+	border-radius: 0px;
+	margin-left: 0px;
+	border-width: 0px;
+	font-size: 15px;
+	color: white;
+	font-weight: bold;
+	}
+	
+	#loginsbtn{
+	border-color: none;
+	border-style: none;
+	border-radius: 0px;
+	margin-left: 0px;
+	border-width: 0px;
+	font-size: 15px;
+	color: white;
+	background-color: #007bff;
+	font-weight: bold;
+	}
+	
+	#loginsbtnout{
+	border-color: none;
+	border-style: none;
+	border-radius: 0px;
+	margin-left: 0px;
+	border-width: 0px;
+	font-size: 15px;
+	color: white;
+	background-color: #007bff;
+	font-weight: bold;
+	display: none;
+	}
+	
+	#loginsbtn:hover{
+	background-color: #007bff;
+	color: rgba(255,255,255,.5);
+	}
+	
+	#loginsbtnout:hover{
+	background-color: #007bff;
+	color: rgba(255,255,255,.5);
+	}
+	
+	#signupbtn:hover{
+	background-color: #007bff;
+	color: rgba(255,255,255,.5);
+}
+	
+	#registerlink{
+		display:none;
+	}
+	
+	#registerlink2{
+		display:block;
+	}
+	
+	#info{
+		display:none !important;
+	}
+	
+	#info2{
+		display:none !important;
+	}
+	
+	#info8{
+		display:none;
+	}
+	
+	#info3{
+		display:none;
+	}
+	
+	#info4{
+		display:none;
+	}
+	
+	#logoutBtn{
+		display:none !important;
+	}
+	
+	#welcome-text {
+		width: 50%;
+	}
+}

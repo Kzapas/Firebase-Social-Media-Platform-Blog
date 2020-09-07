@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./app.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="bootstrap.min.css"
+    />
+    <title>Kollage Space | Privacy</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<img href="home" id="logo_icon_nav" src="img/logo.png" onclick="window.location.href='home';" style="width:30px;, height:30px;"/><p id="spacer">..</p>
+	  <a class="navbar-brand" href="home" id="title_name" >Kollage Space</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="home">Home</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="about">About</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="create">Upload</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" id="loginsbtn" href="create">Login</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" id="loginsbtnout" onclick="logout()">Logout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="signupbtn" href="register">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+	  <!-- account -->
+      <button id="logoutBtn" style="display:none;" onclick="logout()">Logout</button>
+    </nav>
+
+    <main role="main">
+      <!-- JUMBOTRON -->
+
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row"></div>
+			<div id="about_main"><br></br>
+				<h2 style="text-align:center">📜 Privacy Policy</h2><br>
+				<p style="text-align:left;">When you sign up for an account on Kollage Space, you will be giving us your email and password that you choose to submit. When you sign up for a Kollage Space
+				account, we will prohibit the following:</p>
+				<ul style="text-align: left;">
+					<li>Spamming your email</li>
+					<li>Selling your private data</li>
+				</ul>
+				<p style="text-align:left;">All users' data are private and secure.</p><br>
+				<p style="text-align:left;">When a user signs up for an account on Kollage Space, they are agreeing to the following terms:</p>
+				<ul style="text-align: left;">
+					<li>Any materials posted on Kollage Space (e.g. videos, pictures, text) will immediately be exclusive property of 
+					Kollage Space (Kipstudios)</li>
+					<li>Users are prohibited from using Kollage Space content for commercial use or any type of content on a
+					third party social media site.</li>
+				</ul>
+				</div>
+			<hr />
+      </div>
+      <!-- /container -->
+    </main>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-database.js"></script>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>

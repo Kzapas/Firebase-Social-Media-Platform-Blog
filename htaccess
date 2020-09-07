@@ -1,0 +1,12 @@
+ErrorDocument 400 http://kollagespace.com/error
+ErrorDocument 401 http://kollagespace.com/error
+ErrorDocument 403 http://kollagespace.com/error
+ErrorDocument 404 http://kollagespace.com/error
+ErrorDocument 503 http://kollagespace.com/error
+DirectoryIndex home.html
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ $1.html 
